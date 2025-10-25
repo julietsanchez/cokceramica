@@ -69,7 +69,7 @@ export default function ServiciosPage() {
       <PageHero
         title="Nuestros Servicios"
         subtitle="Producción, clases, horneada y más. Todo lo que necesitas para tu pasión por la cerámica"
-        backgroundImage="https://img.freepik.com/foto-gratis/vista-superior-manos-anonimas-tallando-olla-barro_1098-17863.jpg"
+        backgroundImage="/images/hero/teteras-jarras.jpg"
         backgroundAlt="Manos trabajando cerámica en el taller"
       />
 

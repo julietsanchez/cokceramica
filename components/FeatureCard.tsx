@@ -33,57 +33,57 @@ export default function FeatureCard({
     }
   }
 
-        const renderButton = () => {
-          if (!buttonText) return null
+  const renderButton = () => {
+    if (!buttonText) return null
 
-          const buttonStyles = backgroundImage
-            ? "px-6 py-2 border-2 border-white text-white hover:bg-white hover:text-gray-900 font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
-            : "px-6 py-2 border-2 border-cok-orange hover:bg-cok-orange text-cok-orange hover:text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
+    const buttonStyles = backgroundImage
+      ? "px-6 py-2 border-2 border-white text-white hover:bg-white/10 hover:border-white font-medium rounded-xl transition-all duration-300 transform hover:scale-105"
+      : "px-6 py-2 border-2 border-cok-orange hover:bg-cok-orange text-cok-orange hover:text-white font-medium rounded-xl transition-all duration-300 transform hover:scale-105"
 
-          if (buttonAction === 'whatsapp') {
-            return (
-              <div className="flex justify-center mt-4">
-                <button
-                  onClick={handleWhatsapp}
-                  className={buttonStyles}
-                >
-                  {buttonText}
-                </button>
-              </div>
-            )
-          }
+    if (buttonAction === 'whatsapp') {
+      return (
+        <div className="flex justify-center mt-4">
+          <button
+            onClick={handleWhatsapp}
+            className={buttonStyles}
+          >
+            {buttonText}
+          </button>
+        </div>
+      )
+    }
 
-          if (buttonAction === 'link' && buttonHref) {
-            return (
-              <div className="flex justify-center mt-4">
-                <a
-                  href={buttonHref}
-                  className={buttonStyles}
-                >
-                  {buttonText}
-                </a>
-              </div>
-            )
-          }
+    if (buttonAction === 'link' && buttonHref) {
+      return (
+        <div className="flex justify-center mt-4">
+          <a
+            href={buttonHref}
+            className={buttonStyles}
+          >
+            {buttonText}
+          </a>
+        </div>
+      )
+    }
 
-          if (buttonAction === 'none') {
-            return (
-              <div className="flex justify-center mt-4">
-                <button
-                  className={`${buttonStyles} ${backgroundImage ? '' : 'cursor-not-allowed'}`}
-                  disabled
-                >
-                  {buttonText}
-                </button>
-              </div>
-            )
-          }
+    if (buttonAction === 'none') {
+      return (
+        <div className="flex justify-center mt-4">
+          <button
+            className={`${buttonStyles} ${backgroundImage ? '' : 'cursor-not-allowed'}`}
+            disabled
+          >
+            {buttonText}
+          </button>
+        </div>
+      )
+    }
 
-          return null
-        }
+    return null
+  }
 
   return (
-    <div className={`relative rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:scale-105 group h-full flex flex-col min-h-[300px] ${className}`}>
+    <div className={`relative rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] group h-full flex flex-col min-h-[300px] ${className}`}>
       {/* Background Image */}
       {backgroundImage && (
         <div className="absolute inset-0 z-0">
@@ -99,14 +99,14 @@ export default function FeatureCard({
       )}
       
       {/* Content */}
-      <div className={`relative z-10 p-8 flex flex-col h-full ${backgroundImage ? 'text-white' : 'bg-white'}`}>
-        <div className={`flex items-center justify-center w-16 h-16 rounded-lg mb-6 mx-auto ${backgroundImage ? '' : 'bg-cok-orange/10'}`}>
-          <Icon className={backgroundImage ? 'text-white' : 'text-cok-orange'} size={32} />
+      <div className={`relative z-10 p-10 flex flex-col h-full ${backgroundImage ? 'text-white' : 'bg-white'}`}>
+        <div className={`flex items-center justify-center w-16 h-16 mb-6 mx-auto ${backgroundImage ? '' : 'bg-cok-orange/10'}`}>
+          <Icon className='text-cok-orange' size={32} />
         </div>
-        <h3 className={`font-playfair text-xl font-semibold mb-4 text-center ${backgroundImage ? 'text-white' : 'text-gray-900'}`}>
+        <h3 className={`font-playfair text-xl font-bold mb-4 text-center tracking-wide ${backgroundImage ? 'text-white' : 'text-gray-900'}`}>
           {title}
         </h3>
-        <p className={`leading-relaxed text-center flex-grow ${backgroundImage ? 'text-gray-100' : 'text-gray-600'}`}>
+        <p className={`text-base leading-relaxed text-center flex-grow ${backgroundImage ? 'text-white/85' : 'text-gray-600'}`}>
           {description}
         </p>
         {renderButton()}
