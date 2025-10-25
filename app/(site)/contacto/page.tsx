@@ -100,10 +100,19 @@ export default function ContactoPage() {
             </p>
           </div>
           
-          <MapEmbed 
-            mapsUrl="https://www.google.com/maps/@-26.8231306,-65.22122,3a,75y,179.38h,79.07t/data=!3m7!1e1!3m5!1sCWb64dRwupubd2oVWJS1pw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D10.925819439839941%26panoid%3DCWb64dRwupubd2oVWJS1pw%26yaw%3D179.38165306629975!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" 
-            className="max-w-4xl mx-auto"
-          />
+          <div className="max-w-4xl mx-auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.123456789!2d-65.22122!3d-26.8231306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1234567890%3A0x1234567890abcdef!2sDon%20Bosco%201648%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación de COK Cerámica - Don Bosco 1648, San Miguel de Tucumán"
+              className="w-full rounded-lg shadow-sm"
+            />
+          </div>
         </div>
       </Section>
     </>
