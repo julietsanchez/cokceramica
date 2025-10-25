@@ -1,0 +1,108 @@
+{
+  "title": "Nuestros Servicios",
+  "subtitle": "Producción, enseñanza y servicios especializados",
+  "sections": [
+    {
+      "id": "produccion",
+      "title": "Producción y Servicios",
+      "services": [
+        {
+          "title": "Producción de piezas en bizcocho cerámico",
+          "description": "Creamos piezas únicas en bizcocho con técnicas tradicionales y acabados personalizados.",
+          "features": [
+            "Piezas únicas y personalizadas",
+            "Técnicas tradicionales",
+            "Acabados especiales",
+            "Control de calidad"
+          ]
+        },
+        {
+          "title": "Fabricación de vajilla artesanal en gres",
+          "description": "Vajilla funcional y estética en gres, ideal para uso diario con un toque artesanal.",
+          "features": [
+            "Gres de alta calidad",
+            "Diseños funcionales",
+            "Resistente al uso diario",
+            "Estética artesanal"
+          ]
+        },
+        {
+          "title": "Venta de insumos y herramientas",
+          "description": "Todo lo necesario para tu práctica cerámica: arcillas, esmaltes, herramientas y más.",
+          "features": [
+            "Arcillas de diferentes tipos",
+            "Esmaltes y pigmentos",
+            "Herramientas especializadas",
+            "Asesoramiento técnico"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clases",
+      "title": "Clases de Cerámica",
+      "description": "Modalidad libre, presencial y grupal. Módulo de 4 clases de 2 horas (1 por semana).",
+      "details": {
+        "modalidad": "Libre, presencial y grupal",
+        "duracion": "4 clases de 2 horas cada una (1 por semana)",
+        "materiales": [
+          "Arcilla blanca",
+          "Esmaltes (aptos vajilla, plúmbicos, jaspeados)",
+          "Pigmentos y óxidos",
+          "Engobes",
+          "Herramientas básicas"
+        ],
+        "horneadas": "No incluidas (cada pieza requiere 2 cocciones)",
+        "cupos": "Hasta 8 alumnos por turno",
+        "instalaciones": [
+          "Aula con box individual",
+          "Aire acondicionado",
+          "Terraza techada disponible"
+        ],
+        "politica": "Avisar inasistencias con 24h de anticipación, recuperación dentro de 15 días",
+        "valor": "Consultar por WhatsApp"
+      }
+    },
+    {
+      "id": "horneada",
+      "title": "Servicio de Horneada",
+      "description": "Servicio completo de horneada para tus piezas cerámicas con diferentes opciones de temperatura.",
+      "tipos": [
+        {
+          "nombre": "Primera cocción (bizcochado)",
+          "temperatura": "700-900°C",
+          "descripcion": "Cocción inicial para endurecer la arcilla"
+        },
+        {
+          "nombre": "Segunda cocción (esmaltado)",
+          "temperatura": "1000-1200°C",
+          "descripcion": "Cocción final para vitrificar los esmaltes"
+        },
+        {
+          "nombre": "Hornos completos",
+          "temperatura": "700-1200°C",
+          "descripcion": "Cocción completa en una sola vez"
+        }
+      ],
+      "detalles": {
+        "turnos": "Consultar disponibilidad",
+        "plazos": "Entrega según cronograma establecido",
+        "requisitos": [
+          "Lista detallada de piezas",
+          "Piezas completamente secas",
+          "Identificación de cada pieza"
+        ],
+        "recomendaciones": [
+          "Traslado cuidadoso de las piezas",
+          "Evitar monococción cuando sea posible",
+          "Consultar técnicas específicas"
+        ],
+        "notas": [
+          "Sin prioridades especiales",
+          "Retirar con deudas canceladas",
+          "Consultar precios por WhatsApp"
+        ]
+      }
+    }
+  ]
+}

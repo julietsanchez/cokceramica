@@ -1,0 +1,27 @@
+{
+  "title": "Contacto",
+  "subtitle": "Estamos aquí para ayudarte",
+  "info": {
+    "direccion": "Don Bosco 1648, San Miguel de Tucumán, Tucumán",
+    "horarios": "Lun a Vie 10:00–13:00 y 16:30–19:00 · Sáb 10:00–14:00",
+    "nota": "Domingos y feriados cerrado",
+    "email": "cokceramica@gmail.com",
+    "whatsapp": "+5493814427727"
+  },
+  "form": {
+    "title": "Envíanos un mensaje",
+    "description": "Completa el formulario y nos pondremos en contacto contigo pronto.",
+    "fields": {
+      "name": "Nombre completo",
+      "email": "Email",
+      "message": "Mensaje"
+    },
+    "submit": "Enviar mensaje",
+    "success": "¡Mensaje enviado! Te contactaremos pronto."
+  },
+  "cta": {
+    "title": "¿Prefieres WhatsApp?",
+    "description": "Escribinos directamente por WhatsApp para una respuesta más rápida",
+    "button": "Escribir por WhatsApp"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Sobre Nosotros",
+  "subtitle": "Un taller familiar con 9 años de experiencia",
+  "content": {
+    "intro": "COK Cerámica es un taller familiar ubicado en San Miguel de Tucumán, donde Carla, Carlos y Agustina han creado un espacio único para la creación y enseñanza de cerámica.",
+    "history": "Con más de 9 años de trayectoria, nuestro taller se ha consolidado como un referente en la cerámica tucumana, combinando tradición artesanal con técnicas modernas.",
+    "mission": "Nos dedicamos a la producción de piezas únicas en bizcocho cerámico, la fabricación de vajilla artesanal en gres, y la enseñanza de esta hermosa disciplina a través de clases especializadas.",
+    "values": [
+      "Calidad en cada proceso",
+      "Enseñanza personalizada",
+      "Piezas con identidad propia",
+      "Atención cercana y familiar"
+    ],
+    "services": [
+      "Producción de piezas en bizcocho",
+      "Vajilla artesanal en gres",
+      "Clases de cerámica",
+      "Servicio de horneada",
+      "Venta de insumos y herramientas"
+    ]
+  },
+  "team": [
+    {
+      "name": "Carla",
+      "role": "Fundadora y ceramista",
+      "description": "Especialista en técnicas de bizcocho y esmaltado"
+    },
+    {
+      "name": "Carlos",
+      "role": "Ceramista y profesor",
+      "description": "Experto en gres y técnicas de construcción"
+    },
+    {
+      "name": "Agustina",
+      "role": "Ceramista y coordinadora",
+      "description": "Especializada en diseño y acabados"
+    }
+  ]
+}

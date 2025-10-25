@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "title": "Cerámica hecha en Tucumán",
+    "subtitle": "Taller familiar • Piezas únicas • Clases • Servicio de horneada",
+    "primaryCta": {
+      "text": "Escribinos por WhatsApp",
+      "href": "https://wa.me/5493814427727?text=Hola%20COK%20Cerámica,%20quiero%20más%20info%20🙌",
+      "isWhatsapp": true
+    },
+    "secondaryCta": {
+      "text": "Nuestros servicios",
+      "href": "#servicios"
+    },
+    "backgroundImage": "/images/hero/cuencos-apilados.jpg",
+    "backgroundAlt": "Cuencos de cerámica apilados en el taller"
+  },
+  "features": [
+    {
+      "title": "Producción",
+      "description": "Piezas en bizcocho y vajilla artesanal en gres.",
+      "icon": "Palette"
+    },
+    {
+      "title": "Clases anuales",
+      "description": "Modalidad libre, grupal y presencial.",
+      "icon": "Users"
+    },
+    {
+      "title": "Servicio de horneada",
+      "description": "Por pieza o carga completa (700–1200 °C).",
+      "icon": "Flame"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "/images/hero/bizcocho-bowls.jpg",
+      "alt": "Bowls de bizcocho cerámico",
+      "title": "BOWLS DE BIZCOCHO"
+    },
+    {
+      "src": "/images/hero/platos-secandose.jpg",
+      "alt": "Platos secándose",
+      "title": "PLATOS"
+    },
+    {
+      "src": "/images/hero/teteras-jarras.jpg",
+      "alt": "Teteras y jarras",
+      "title": "TETERAS Y JARRAS"
+    },
+    {
+      "src": "/images/hero/cuencos-apilados.jpg",
+      "alt": "Cuencos apilados",
+      "title": "CUENCOS"
+    },
+    {
+      "src": "/images/hero/tazas-secandose.jpg",
+      "alt": "Tazas secándose",
+      "title": "TAZAS"
+    }
+  ],
+  "trust": {
+    "title": "9+ años de taller · atención cercana · procesos cuidados"
+  }
+}

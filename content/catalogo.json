@@ -1,0 +1,97 @@
+{
+  "title": "Catálogo",
+  "subtitle": "Nuestras piezas y productos",
+  "categories": [
+    {
+      "id": "vajilla-artesanal",
+      "name": "Vajilla artesanal",
+      "description": "Piezas funcionales en gres para uso diario",
+      "items": [
+        {
+          "id": "platos-gres",
+          "name": "Platos de gres",
+          "description": "Platos artesanales en gres, ideales para uso diario",
+          "image": "/images/hero/platos-secandose.jpg",
+          "medidas": "Ø 20-25 cm",
+          "tecnica": "Gres, esmaltado",
+          "precio": "Consultar"
+        },
+        {
+          "id": "tazas-gres",
+          "name": "Tazas de gres",
+          "description": "Tazas cómodas con asa ergonómica",
+          "image": "/images/hero/tazas-secandose.jpg",
+          "medidas": "Capacidad 250ml",
+          "tecnica": "Gres, esmaltado",
+          "precio": "Consultar"
+        }
+      ]
+    },
+    {
+      "id": "piezas-bizcocho",
+      "name": "Piezas en bizcocho",
+      "description": "Piezas únicas en bizcocho cerámico",
+      "items": [
+        {
+          "id": "bowls-bizcocho",
+          "name": "Bowls de bizcocho",
+          "description": "Bowls únicos en bizcocho, perfectos para decoración",
+          "image": "/images/hero/bizcocho-bowls.jpg",
+          "medidas": "Ø 15-20 cm",
+          "tecnica": "Bizcocho, sin esmaltar",
+          "precio": "Consultar"
+        },
+        {
+          "id": "cuencos-bizcocho",
+          "name": "Cuencos de bizcocho",
+          "description": "Cuencos artesanales en bizcocho",
+          "image": "/images/hero/cuencos-apilados.jpg",
+          "medidas": "Ø 12-18 cm",
+          "tecnica": "Bizcocho, sin esmaltar",
+          "precio": "Consultar"
+        }
+      ]
+    },
+    {
+      "id": "insumos-herramientas",
+      "name": "Insumos y herramientas",
+      "description": "Todo lo necesario para tu práctica cerámica",
+      "items": [
+        {
+          "id": "arcilla-blanca",
+          "name": "Arcilla blanca",
+          "description": "Arcilla blanca de alta calidad para cerámica",
+          "image": "/images/hero/platos-secandose.jpg",
+          "medidas": "Por kg",
+          "tecnica": "Arcilla blanca",
+          "precio": "Consultar"
+        },
+        {
+          "id": "esmaltes",
+          "name": "Esmaltes cerámicos",
+          "description": "Esmaltes aptos para vajilla y decoración",
+          "image": "/images/hero/teteras-jarras.jpg",
+          "medidas": "Por kg",
+          "tecnica": "Esmaltes cerámicos",
+          "precio": "Consultar"
+        }
+      ]
+    },
+    {
+      "id": "ediciones-especiales",
+      "name": "Ediciones especiales",
+      "description": "Piezas únicas y colecciones limitadas",
+      "items": [
+        {
+          "id": "teteras-jarras",
+          "name": "Teteras y jarras",
+          "description": "Teteras y jarras artesanales únicas",
+          "image": "/images/hero/teteras-jarras.jpg",
+          "medidas": "Variadas",
+          "tecnica": "Gres, esmaltado",
+          "precio": "Consultar"
+        }
+      ]
+    }
+  ]
+}
