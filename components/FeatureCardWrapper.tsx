@@ -11,6 +11,7 @@ interface FeatureCardWrapperProps {
   buttonHref?: string
   buttonAction?: 'whatsapp' | 'link' | 'none'
   className?: string
+  backgroundImage?: string
 }
 
 const iconMap = {
@@ -23,5 +24,5 @@ export default function FeatureCardWrapper(props: FeatureCardWrapperProps) {
   const { iconName, ...restProps } = props
   const Icon = iconMap[iconName as keyof typeof iconMap]
   
-  return <FeatureCard icon={Icon} {...restProps} />
+  return <FeatureCard icon={Icon} {...restProps} backgroundImage={props.backgroundImage} />
 }

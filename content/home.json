@@ -18,17 +18,20 @@
     {
       "title": "Producción",
       "description": "Piezas en bizcocho y vajilla artesanal en gres.",
-      "icon": "Palette"
+      "icon": "Palette",
+      "backgroundImage": "/images/hero/bizcocho-bowls.jpg"
     },
     {
       "title": "Clases anuales",
       "description": "Modalidad libre, grupal y presencial.",
-      "icon": "Users"
+      "icon": "Users",
+      "backgroundImage": "/images/hero/cuencos-apilados.jpg"
     },
     {
       "title": "Servicio de horneada",
       "description": "Por pieza o carga completa (700–1200 °C).",
-      "icon": "Flame"
+      "icon": "Flame",
+      "backgroundImage": "/images/hero/teteras-jarras.jpg"
     }
   ],
   "gallery": [

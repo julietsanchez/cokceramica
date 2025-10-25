@@ -72,6 +72,7 @@ export default function HomePage() {
                     iconName={feature.icon}
                     title={feature.title}
                     description={feature.description}
+                    backgroundImage={feature.backgroundImage}
                     {...buttonProps}
                   />
                 </div>
