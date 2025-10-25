@@ -94,7 +94,7 @@ export default function FeatureCard({
             className="object-cover"
           />
           {/* Overlay negro para mejor legibilidad del texto */}
-          <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors duration-300"></div>
+          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
         </div>
       )}
       

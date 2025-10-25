@@ -16,12 +16,6 @@
   },
   "features": [
     {
-      "title": "Producción",
-      "description": "Piezas en bizcocho y vajilla artesanal en gres.",
-      "icon": "Palette",
-      "backgroundImage": "/images/hero/bizcocho-bowls.jpg"
-    },
-    {
       "title": "Clases anuales",
       "description": "Modalidad libre, grupal y presencial.",
       "icon": "Users",
@@ -32,6 +26,12 @@
       "description": "Por pieza o carga completa (700–1200 °C).",
       "icon": "Flame",
       "backgroundImage": "/images/hero/teteras-jarras.jpg"
+    },
+    {
+      "title": "Producción",
+      "description": "Piezas en bizcocho y vajilla artesanal en gres.",
+      "icon": "Palette",
+      "backgroundImage": "/images/hero/bizcocho-bowls.jpg"
     }
   ],
   "gallery": [

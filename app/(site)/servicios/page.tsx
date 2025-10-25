@@ -96,9 +96,6 @@ export default function ServiciosPage() {
             <h2 className="font-playfair text-3xl font-bold text-gray-900 mb-4">
               Clases de Cerámica
             </h2>
-            <p className="text-lg text-gray-600">
-              Modalidad libre, presencial y grupal. Módulo de 4 clases de 2 horas (1 por semana).
-            </p>
           </div>
           
           <div className="max-w-4xl mx-auto">
