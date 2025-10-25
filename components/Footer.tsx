@@ -59,30 +59,26 @@ export default function Footer() {
 
           {/* Social media */}
           <div className="lg:col-span-1">
-            <h3 className="font-semibold text-lg mb-4">Síguenos</h3>
+            <h3 className="font-semibold text-lg mb-4">¡Seguinos!</h3>
             <div className="flex space-x-4">
-              {instagram && (
-                <a
-                  href={instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-cok-cyan transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram size={24} />
-                </a>
-              )}
-              {facebook && (
-                <a
-                  href={facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-cok-cyan transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook size={24} />
-                </a>
-              )}
+              <a
+                href="https://www.instagram.com/cokceramica/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-cok-cyan transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram size={24} />
+              </a>
+              <a
+                href="https://www.facebook.com/cokceramicatucumanoficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-cok-cyan transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={24} />
+              </a>
             </div>
           </div>
         </div>
