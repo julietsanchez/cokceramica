@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Logo and description */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
@@ -34,56 +34,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Contact info */}
-          <div className="lg:col-span-1">
-            <h3 className="font-semibold text-lg mb-4">Contacto</h3>
-            <div className="space-y-3">
-              {address && (
-                <div className="flex items-start space-x-3">
-                  <MapPin size={18} className="text-cok-cyan mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-300 text-sm">{address}</span>
-                </div>
-              )}
-              
-              {hours && (
-                <div className="flex items-start space-x-3">
-                  <Clock size={18} className="text-cok-cyan mt-0.5 flex-shrink-0" />
-                  <div className="text-gray-300 text-sm">
-                    <p>{hours}</p>
-                    <p className="text-xs text-gray-400 mt-1">
-                      Domingos y feriados cerrado
-                    </p>
-                  </div>
-                </div>
-              )}
-              
-              {email && (
-                <div className="flex items-center space-x-3">
-                  <Mail size={18} className="text-cok-cyan flex-shrink-0" />
-                  <a 
-                    href={`mailto:${email}`}
-                    className="text-gray-300 text-sm hover:text-cok-cyan transition-colors"
-                  >
-                    {email}
-                  </a>
-                </div>
-              )}
-              
-              {whatsapp && (
-                <div className="flex items-center space-x-3">
-                  <Phone size={18} className="text-cok-cyan flex-shrink-0" />
-                  <a 
-                    href={`https://wa.me/${whatsapp.replace(/[^\d]/g, '')}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 text-sm hover:text-cok-cyan transition-colors"
-                  >
-                    {whatsapp}
-                  </a>
-                </div>
-              )}
-            </div>
-          </div>
 
           {/* Quick links */}
           <div className="lg:col-span-1">
