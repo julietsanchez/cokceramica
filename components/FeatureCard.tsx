@@ -37,7 +37,7 @@ export default function FeatureCard({
           if (!buttonText) return null
 
           const buttonStyles = backgroundImage
-            ? "px-6 py-2 bg-white text-gray-900 hover:bg-gray-100 font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
+            ? "px-6 py-2 border-2 border-white text-white hover:bg-white hover:text-gray-900 font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
             : "px-6 py-2 border-2 border-cok-orange hover:bg-cok-orange text-cok-orange hover:text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105"
 
           if (buttonAction === 'whatsapp') {
@@ -83,7 +83,7 @@ export default function FeatureCard({
         }
 
   return (
-    <div className={`relative rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:scale-105 group h-full flex flex-col min-h-[400px] ${className}`}>
+    <div className={`relative rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 transform hover:scale-105 group h-full flex flex-col min-h-[300px] ${className}`}>
       {/* Background Image */}
       {backgroundImage && (
         <div className="absolute inset-0 z-0">
@@ -100,7 +100,7 @@ export default function FeatureCard({
       
       {/* Content */}
       <div className={`relative z-10 p-8 flex flex-col h-full ${backgroundImage ? 'text-white' : 'bg-white'}`}>
-        <div className={`flex items-center justify-center w-16 h-16 rounded-lg mb-6 mx-auto ${backgroundImage ? 'bg-white/20 backdrop-blur-sm' : 'bg-cok-orange/10'}`}>
+        <div className={`flex items-center justify-center w-16 h-16 rounded-lg mb-6 mx-auto ${backgroundImage ? '' : 'bg-cok-orange/10'}`}>
           <Icon className={backgroundImage ? 'text-white' : 'text-cok-orange'} size={32} />
         </div>
         <h3 className={`font-playfair text-xl font-semibold mb-4 text-center ${backgroundImage ? 'text-white' : 'text-gray-900'}`}>
