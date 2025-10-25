@@ -22,7 +22,7 @@ export default function ContactoPage() {
       {/* Hero Section */}
       <PageHero
         title="Contacto"
-        subtitle="Estamos en Don Bosco 1648, San Miguel de Tucumán. ¡Escribinos por WhatsApp!"
+        subtitle="Estamos aquí para ayudarte"
         backgroundImage="/images/hero/cuencos-apilados.jpg"
         backgroundAlt="Cuencos de cerámica apilados en el taller"
       />
@@ -101,7 +101,7 @@ export default function ContactoPage() {
           </div>
           
           <MapEmbed 
-            mapsUrl={process.env.NEXT_PUBLIC_MAPS_URL} 
+            mapsUrl="https://www.google.com/maps/@-26.8231306,-65.22122,3a,75y,179.38h,79.07t/data=!3m7!1e1!3m5!1sCWb64dRwupubd2oVWJS1pw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D10.925819439839941%26panoid%3DCWb64dRwupubd2oVWJS1pw%26yaw%3D179.38165306629975!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D" 
             className="max-w-4xl mx-auto"
           />
         </div>
