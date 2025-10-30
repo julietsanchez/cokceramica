@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import Section from '@/components/Section'
 import PageHero from '@/components/PageHero'
 import Image from 'next/image'
-import { CheckCircle, Users, Heart, Award } from 'lucide-react'
+import { CheckCircle, Users, Heart, Award, Flower2, Hammer, ClipboardList, Palette } from 'lucide-react'
 import sobreContent from '@/content/sobre.json'
 
 export const metadata: Metadata = {
@@ -16,6 +16,13 @@ export const metadata: Metadata = {
 
 export default function SobreNosotrosPage() {
   const { title, subtitle, content, team } = sobreContent
+  
+  // Mapear iconos a cada miembro del equipo
+  const teamIcons = [
+    Palette, // Carla - Fundadora, profesora y ceramista
+    Hammer,  // Carlos - Ceramista y profesor
+    ClipboardList // Agustina - Encargada
+  ]
 
   return (
     <>
@@ -56,6 +63,38 @@ export default function SobreNosotrosPage() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Team Section */}
+      <Section className="bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-playfair text-3xl font-bold text-gray-900 mb-4">
+              Nuestro equipo
+            </h2>
+            <p className="text-lg text-gray-600">
+              La familia que hace posible COK Cerámica
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {team.map((member, index) => {
+              const IconComponent = teamIcons[index]
+              return (
+                <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center">
+                  <div className="w-20 h-20 bg-cok-cyan/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <IconComponent className="text-cok-orange" size={32} />
+                  </div>
+                  <h3 className="font-playfair text-xl font-semibold text-gray-900 mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-cok-cyan font-medium mb-3">{member.role}</p>
+                  <p className="text-gray-600 text-sm">{member.description}</p>
+                </div>
+              )
+            })}
           </div>
         </div>
       </Section>
@@ -102,35 +141,6 @@ export default function SobreNosotrosPage() {
                   <div className="w-2 h-2 bg-cok-cyan rounded-full mr-3"></div>
                   <span className="text-gray-900 font-medium">{service}</span>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      {/* Team Section */}
-      <Section className="bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-playfair text-3xl font-bold text-gray-900 mb-4">
-              Nuestro equipo
-            </h2>
-            <p className="text-lg text-gray-600">
-              La familia que hace posible COK Cerámica
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center">
-                <div className="w-20 h-20 bg-cok-cyan/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="text-cok-cyan" size={32} />
-                </div>
-                <h3 className="font-playfair text-xl font-semibold text-gray-900 mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-cok-cyan font-medium mb-3">{member.role}</p>
-                <p className="text-gray-600 text-sm">{member.description}</p>
               </div>
             ))}
           </div>
