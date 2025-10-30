@@ -18,7 +18,7 @@ export default function ProximamentePage() {
       {/* Hero Section */}
       <PageHero
         title="Próximamente"
-        subtitle="Estamos trabajando en algo especial para ti"
+        subtitle="Aquí podrás ver nuestro catálogo de productos."
         backgroundImage="/images/hero/cuencos-apilados.jpg"
         backgroundAlt="Cerámica artesanal"
       />
@@ -38,8 +38,7 @@ export default function ProximamentePage() {
                   Estamos preparando algo increíble
                 </h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Trabajamos incansablemente para traerte el mejor contenido y servicios. 
-                  Vuelve pronto para descubrir todas las novedades.
+                Estamos trabajando en nuestro catálogo. Volvé pronto.
                 </p>
               </div>
               
