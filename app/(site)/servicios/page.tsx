@@ -251,23 +251,24 @@ export default function ServiciosPage() {
                 <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
                   <ul className="space-y-2">
                     {horneadaSection.detalles.informacionImportante.map((info, index) => (
-                      <li key={index} className="text-sm text-yellow-800">
-                        {info}
+                      <li key={index} className="flex items-start text-sm">
+                        <Info className="text-yellow-600 mr-3 mt-0.5 flex-shrink-0" size={16} />
+                        <span className="text-yellow-800">{info}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               )}
               
-              {horneadaSection?.detalles?.traslado && (
-                <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
-                  <h4 className="font-semibold text-gray-900 mb-2">Traslado de piezas</h4>
-                  <p className="text-sm text-gray-600">{horneadaSection.detalles.traslado}</p>
-                </div>
-              )}
-              
               <div className="mt-6 text-center">
-                <WhatsAppButton text="Consultar" />
+                <a
+                  href="https://cokceramica.site.agendapro.com/ar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-cok-cyan text-white font-semibold rounded-lg hover:bg-cok-cyan/90 transition-colors"
+                >
+                  Solicitar turno
+                </a>
               </div>
             </div>
           </div>
