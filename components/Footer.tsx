@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               Taller familiar de cerámica en Tucumán. Piezas artesanales, 
-              clases y servicio de horneada con 9+ años de experiencia.
+              clases y servicio de horneada con +9 años de experiencia.
             </p>
           </div>
 
