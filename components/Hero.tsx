@@ -57,7 +57,7 @@ export default function Hero({
             sizes="100vw"
           />
         </div>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       {/* Content */}
