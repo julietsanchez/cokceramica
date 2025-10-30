@@ -105,7 +105,7 @@ export default function HomePage() {
             {trust.title}
           </h2>
           <p className="text-lg opacity-90">
-            Confianza, experiencia y dedicación en cada proceso
+            Confianza, experiencia, dedicación y cuidado en cada proceso.
           </p>
         </div>
       </Section>

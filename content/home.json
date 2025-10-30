@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Cerámica hecha en Tucumán",
-    "subtitle": "Taller familiar • Piezas únicas • Clases • Servicio de horneada",
+    "title": "Producción de cerámica hecha en Tucumán",
+    "subtitle": "Taller familiar • Piezas bizcocho • Clases • Servicio de horneada",
     "primaryCta": {
       "text": "Escribinos por WhatsApp",
       "href": "https://wa.me/5493814427727?text=Hola%20COK%20Cerámica,%20quiero%20más%20info%20🙌",
@@ -11,8 +11,8 @@
       "text": "Nuestros servicios",
       "href": "#servicios"
     },
-    "backgroundImage": "/images/hero/cuencos-apilados.jpg",
-    "backgroundAlt": "Cuencos de cerámica apilados en el taller"
+    "backgroundImage": "/images/hero/hero-marron.jpg",
+    "backgroundAlt": "Producción de cerámica en Tucumán"
   },
   "features": [
     {
@@ -62,6 +62,6 @@
     }
   ],
   "trust": {
-    "title": "9+ años de taller · atención cercana · procesos cuidados"
+    "title": "+9 años de experiencia en el rubro de la cerámica"
   }
 }

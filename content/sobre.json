@@ -22,18 +22,18 @@
   "team": [
     {
       "name": "Carla",
-      "role": "Fundadora y ceramista",
-      "description": "Especialista en técnicas de bizcocho y esmaltado"
+      "role": "Fundadora, profesora y ceramista",
+      "description": "Especialista en construcción de piezas bizcocho y terminación de piezas esmaltadas"
     },
     {
       "name": "Carlos",
       "role": "Ceramista y profesor",
-      "description": "Experto en gres y técnicas de construcción"
+      "description": "Experto en gres y hornos"
     },
     {
       "name": "Agustina",
-      "role": "Ceramista y coordinadora",
-      "description": "Especializada en diseño y acabados"
+      "role": "Encargada",
+      "description": "Coordinadora de logística y gestión operativa (no es ceramista)"
     }
   ]
 }

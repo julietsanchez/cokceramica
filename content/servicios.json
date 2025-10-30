@@ -50,7 +50,8 @@
           "Esmaltes (aptos vajilla, plúmbicos, jaspeados)",
           "Pigmentos y óxidos",
           "Engobes",
-          "Herramientas básicas"
+          "Herramientas básicas",
+          "No se requiere contar con conocimientos previos"
         ],
         "horneadas": "No incluidas (cada pieza requiere 2 cocciones)",
         "cupos": "Hasta 8 alumnos por turno",
@@ -70,18 +71,13 @@
       "tipos": [
         {
           "nombre": "Primera cocción (bizcochado)",
-          "temperatura": "700-900°C",
+          "temperatura": "1020-1060°C",
           "descripcion": "Cocción inicial para endurecer la arcilla"
         },
         {
           "nombre": "Segunda cocción (esmaltado)",
-          "temperatura": "1000-1200°C",
+          "temperatura": "1020-1060°C",
           "descripcion": "Cocción final para vitrificar los esmaltes"
-        },
-        {
-          "nombre": "Hornos completos",
-          "temperatura": "700-1200°C",
-          "descripcion": "Cocción completa en una sola vez"
         }
       ],
       "detalles": {
@@ -97,11 +93,14 @@
           "Evitar monococción cuando sea posible",
           "Consultar técnicas específicas"
         ],
-        "notas": [
+        "informacionImportante": [
+          "Las piezas deben tener un tiempo de secado entre 7 a 20 días.",
+          "Solicitar turnos en nuestra página (AgendaPro habilitado 24 hs).",
           "Sin prioridades especiales",
           "Retirar con deudas canceladas",
           "Consultar precios por WhatsApp"
-        ]
+        ],
+        "traslado": "La información sobre traslado será cargada próximamente."
       }
     }
   ]

@@ -26,6 +26,9 @@ export const metadata: Metadata = {
 
 export default function ServiciosPage() {
   const { title, subtitle, sections } = serviciosContent
+  
+  const horneadaSection = sections.find(s => s.id === 'horneada')
+  const clasesSection = sections.find(s => s.id === 'clases')
 
   const produccionServices = [
     {
@@ -139,26 +142,12 @@ export default function ServiciosPage() {
                   </h3>
                   
                   <ul className="space-y-2">
-                    <li className="flex items-center">
-                      <CheckCircle className="text-cok-cyan mr-3" size={16} />
-                      <span className="text-gray-600">Arcilla blanca</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-cok-cyan mr-3" size={16} />
-                      <span className="text-gray-600">Esmaltes (aptos vajilla, plúmbicos, jaspeados)</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-cok-cyan mr-3" size={16} />
-                      <span className="text-gray-600">Pigmentos y óxidos</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-cok-cyan mr-3" size={16} />
-                      <span className="text-gray-600">Engobes</span>
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="text-cok-cyan mr-3" size={16} />
-                      <span className="text-gray-600">Herramientas básicas</span>
-                    </li>
+                    {clasesSection?.details?.materiales?.map((material, index) => (
+                      <li key={index} className="flex items-center">
+                        <CheckCircle className="text-cok-cyan mr-3" size={16} />
+                        <span className="text-gray-600">{material}</span>
+                      </li>
+                    ))}
                   </ul>
                   
                   <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
@@ -216,27 +205,15 @@ export default function ServiciosPage() {
           </div>
           
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-gray-50 p-6 rounded-lg text-center">
-                <Thermometer className="text-cok-cyan mx-auto mb-4" size={32} />
-                <h3 className="font-semibold text-gray-900 mb-2">Primera cocción</h3>
-                <p className="text-sm text-gray-600">700-900°C</p>
-                <p className="text-sm text-gray-600">Bizcochado</p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg text-center">
-                <Thermometer className="text-cok-orange mx-auto mb-4" size={32} />
-                <h3 className="font-semibold text-gray-900 mb-2">Segunda cocción</h3>
-                <p className="text-sm text-gray-600">1000-1200°C</p>
-                <p className="text-sm text-gray-600">Esmaltado</p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg text-center">
-                <Thermometer className="text-cok-cyan mx-auto mb-4" size={32} />
-                <h3 className="font-semibold text-gray-900 mb-2">Hornos completos</h3>
-                <p className="text-sm text-gray-600">700-1200°C</p>
-                <p className="text-sm text-gray-600">Cocción completa</p>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {horneadaSection?.tipos?.map((tipo, index) => (
+                <div key={index} className="bg-gray-50 p-6 rounded-lg text-center">
+                  <Thermometer className={`mx-auto mb-4 ${index === 0 ? 'text-cok-cyan' : 'text-cok-orange'}`} size={32} />
+                  <h3 className="font-semibold text-gray-900 mb-2">{tipo.nombre}</h3>
+                  <p className="text-sm text-gray-600">{tipo.temperatura}</p>
+                  <p className="text-sm text-gray-600">{tipo.descripcion}</p>
+                </div>
+              ))}
             </div>
             
             <div className="bg-white border border-gray-200 rounded-lg p-8">
@@ -248,45 +225,46 @@ export default function ServiciosPage() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3">Requisitos</h4>
                   <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <CheckCircle className="text-cok-cyan mr-3 mt-0.5" size={16} />
-                      <span className="text-gray-600">Lista detallada de piezas</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="text-cok-cyan mr-3 mt-0.5" size={16} />
-                      <span className="text-gray-600">Piezas completamente secas</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="text-cok-cyan mr-3 mt-0.5" size={16} />
-                      <span className="text-gray-600">Identificación de cada pieza</span>
-                    </li>
+                    {horneadaSection?.detalles?.requisitos?.map((req, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle className="text-cok-cyan mr-3 mt-0.5" size={16} />
+                        <span className="text-gray-600">{req}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3">Recomendaciones</h4>
                   <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <CheckCircle className="text-cok-cyan mr-3 mt-0.5" size={16} />
-                      <span className="text-gray-600">Traslado cuidadoso de las piezas</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="text-cok-cyan mr-3 mt-0.5" size={16} />
-                      <span className="text-gray-600">Evitar monococción cuando sea posible</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="text-cok-cyan mr-3 mt-0.5" size={16} />
-                      <span className="text-gray-600">Consultar técnicas específicas</span>
-                    </li>
+                    {horneadaSection?.detalles?.recomendaciones?.map((rec, index) => (
+                      <li key={index} className="flex items-start">
+                        <CheckCircle className="text-cok-cyan mr-3 mt-0.5" size={16} />
+                        <span className="text-gray-600">{rec}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
               
-              <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-                <p className="text-sm text-yellow-800">
-                  <strong>Nota:</strong> Sin prioridades especiales. Retirar con deudas canceladas.
-                </p>
-              </div>
+              {horneadaSection?.detalles?.informacionImportante && (
+                <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+                  <ul className="space-y-2">
+                    {horneadaSection.detalles.informacionImportante.map((info, index) => (
+                      <li key={index} className="text-sm text-yellow-800">
+                        {info}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              
+              {horneadaSection?.detalles?.traslado && (
+                <div className="mt-6 p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                  <h4 className="font-semibold text-gray-900 mb-2">Traslado de piezas</h4>
+                  <p className="text-sm text-gray-600">{horneadaSection.detalles.traslado}</p>
+                </div>
+              )}
               
               <div className="mt-6 text-center">
                 <WhatsAppButton text="Consultar" />
