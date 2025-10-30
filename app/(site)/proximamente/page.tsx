@@ -5,10 +5,10 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Próximamente',
-  description: 'Estamos trabajando en nuevas funcionalidades. Vuelve pronto.',
+  description: 'Aquí podrás ver nuestro catálogo de productos.',
   openGraph: {
     title: 'Próximamente - COK Cerámica',
-    description: 'Estamos trabajando en nuevas funcionalidades. Vuelve pronto.',
+    description: 'Estamos trabajando en nuestro catálogo. Volvé pronto.',
   },
 }
 
