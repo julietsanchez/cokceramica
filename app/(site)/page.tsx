@@ -50,7 +50,8 @@ export default function HomePage() {
               if (feature.title === 'Producción') {
                 buttonProps = {
                   buttonText: 'Nuestro catálogo',
-                  buttonAction: 'none' as const
+                  buttonAction: 'link' as const,
+                  buttonHref: '/proximamente'
                 }
               } else if (feature.title === 'Clases anuales') {
                 buttonProps = {

@@ -78,6 +78,11 @@
           "nombre": "Segunda cocción (esmaltado)",
           "temperatura": "1020-1060°C",
           "descripcion": "Cocción final para vitrificar los esmaltes"
+        },
+        {
+          "nombre": "Tercera cocción (3er fuego / gres)",
+          "temperatura": "700°–1200°C",
+          "descripcion": "Para piezas decoradas o de gres que requieren alta temperatura de vitrificación."
         }
       ],
       "detalles": {

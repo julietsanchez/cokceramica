@@ -204,11 +204,13 @@ export default function ServiciosPage() {
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {horneadaSection?.tipos?.map((tipo, index) => (
                 <div key={index} className="bg-gray-50 p-6 rounded-lg text-center">
-                  <Thermometer className={`mx-auto mb-4 ${index === 0 ? 'text-cok-cyan' : 'text-cok-orange'}`} size={32} />
+                  <Thermometer className={`mx-auto mb-4 ${
+                    index === 0 ? 'text-cok-cyan' : index === 1 ? 'text-cok-orange' : 'text-purple-500'
+                  }`} size={32} />
                   <h3 className="font-semibold text-gray-900 mb-2">{tipo.nombre}</h3>
                   <p className="text-sm text-gray-600">{tipo.temperatura}</p>
                   <p className="text-sm text-gray-600">{tipo.descripcion}</p>
